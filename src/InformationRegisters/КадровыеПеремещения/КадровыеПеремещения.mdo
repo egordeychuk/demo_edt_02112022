@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1af5c61e-9978-42c7-bee4-447035226657">
+  <producedTypes>
+    <selectionType typeId="d1b7a180-e5ae-4c45-b286-56fc4822f503" valueTypeId="78c5a795-66fe-41d6-8a17-2e056682d430"/>
+    <listType typeId="4840331a-ab38-4165-b533-e6bf56a26609" valueTypeId="fcb1d63d-8341-4179-afd8-5b52ec71f313"/>
+    <managerType typeId="c6abde8b-af67-4615-bd8e-739de3c4ccfd" valueTypeId="0836a39a-eb77-445c-9608-6ea959fc779f"/>
+    <recordSetType typeId="2588510b-acdd-4846-bdbc-d08e043545c2" valueTypeId="be7dca65-7902-455d-a0ab-a5f3e4ee242c"/>
+    <recordKeyType typeId="e08bbf04-4ba4-492e-a02c-4f9ff754bf5c" valueTypeId="d90f0871-9c07-441b-8627-7312cc762e96"/>
+    <recordType typeId="fa2674c7-2491-47c8-870e-92dfc32be122" valueTypeId="1e5a7e3a-6f65-49e6-bb2a-a2c703d55545"/>
+    <recordManagerType typeId="9a92259e-835b-470d-bf4f-4cfce8359726" valueTypeId="e34c61c6-d649-4f59-aa5b-6baf9e887762"/>
+  </producedTypes>
+  <name>КадровыеПеремещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадровые перемещения</value>
+  </synonym>
+  <dataHistory>Use</dataHistory>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fba37f41-97ad-4d87-92b7-27c8cf4c063c">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="31f8de8f-b30d-437d-8335-2132f12e9c67">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d59abac9-cbbc-4667-8054-236c087b0ba2">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dd4c54c4-b94b-4d94-8f9b-2bdd81524b60">
+    <name>ПричинаИзмененияСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина изменения состояния</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПричинаИзмененияСостояния</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c23f87e4-8c17-4418-a0c1-e58590e63d34">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

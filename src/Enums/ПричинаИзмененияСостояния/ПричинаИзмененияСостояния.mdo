@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c8e3733-5994-4594-b028-11bcc17363dc">
+  <producedTypes>
+    <refType typeId="001248f8-6267-44ec-8e61-93de28510e5a" valueTypeId="a30beac7-243c-4806-b692-857f8edb651d"/>
+    <listType typeId="8ac99b0e-823f-42e9-b50f-a3024afbe368" valueTypeId="674a81eb-7178-4c02-a8fb-db3d8df48fbd"/>
+    <managerType typeId="68ded27f-e8e5-4303-b145-d5dc5ea74ec5" valueTypeId="2ad1eb9e-568e-4859-a220-89248c0b72e7"/>
+  </producedTypes>
+  <name>ПричинаИзмененияСостояния</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причина изменения состояния</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="aa030a4a-2bf7-4ce1-b901-82d59750807c">
+    <name>ПриемНаРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прием на работу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a0d7351-1ddc-4989-882e-afcf3d42ba46">
+    <name>Перемещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перемещение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="59fdadd8-4c16-426c-8859-92bd074f836a">
+    <name>Увольнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Увольнение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e69fa193-5513-4c7a-9fbb-b6f8ed576d6e">
+  <name>Кадры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадры</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.Подразделения</content>
+  <content>Document.ПриемНаРаботу</content>
+  <content>Document.КадровоеПеремещение</content>
+  <content>Document.Увольнение</content>
+  <content>InformationRegister.КадровыеПеремещения</content>
+  <content>Report.Отчет</content>
+  <content>Document.ПриемНаРаботуСписком</content>
+</mdclass:Subsystem>

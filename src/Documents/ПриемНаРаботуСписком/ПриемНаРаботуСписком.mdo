@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3cf482a4-ec6e-4245-82c7-ad1b02cd4925">
+  <producedTypes>
+    <objectType typeId="08da7d65-d6d9-4f40-9e78-51fc0c405138" valueTypeId="1ceb9147-f94f-4dd0-92f0-25e63d5f37a2"/>
+    <refType typeId="8682c303-d1e1-455e-9764-6a07e8ce3b41" valueTypeId="e86c4bda-4c1d-4d1b-b3e5-aca7abcb3439"/>
+    <selectionType typeId="08843c74-63a9-4af9-81f1-01a70626d54a" valueTypeId="abf5e6d0-f37f-47bd-8db0-f2670ec9aa4b"/>
+    <listType typeId="ac386512-e3f9-4c25-97d9-9ec7cd88ec65" valueTypeId="2b1b7da5-4bf7-4ccd-aefd-be9295bfc499"/>
+    <managerType typeId="ae017880-2b78-4054-897a-32a269c199a9" valueTypeId="8becc93e-3271-4456-89a5-f5e3c8bae540"/>
+  </producedTypes>
+  <name>ПриемНаРаботуСписком</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прием на работу списком</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриемНаРаботуСписком.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриемНаРаботуСписком.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.КадровыеПеремещения</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b52fe23e-6baa-4875-8d8a-7528e277177f">
+    <name>ВыводитьПодразделениеВПечатныхФормах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить подразделение в печатных формах</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f7f01cc9-e7f2-4e04-b0d8-fa43348ecfbb">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="c81605b6-48ad-4b68-a988-4f5d58d529b3">
+    <producedTypes>
+      <objectType typeId="80d291e2-100e-4ca7-b87e-bd5f420c474c" valueTypeId="fb02e3ae-1fa0-4dc8-8d9d-04306fe377e0"/>
+      <rowType typeId="a49c8f97-3692-4fbb-b7fc-a5582b51c98b" valueTypeId="bddc1b9b-1d96-45b8-a23e-e125780ea9af"/>
+    </producedTypes>
+    <name>Работники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работники</value>
+    </synonym>
+    <attributes uuid="04b6bde9-e359-4872-a83e-1087f9cc8f8c">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="689e44f5-5b9e-4006-ba87-54f58252ac42">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Должности</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5ff94ae3-d832-4849-9eb7-014a9615949f">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0bbb7e84-1368-4247-813b-fd4c5acf1ad4">
+      <name>Оклад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оклад</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="b36e3474-6fbc-4df2-abcf-1febfabbc6cb">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Document>
